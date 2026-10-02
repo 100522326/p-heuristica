@@ -34,4 +34,11 @@ minimize CosteMedio:
         (i-1) * p[k] * x[k,i,j];
 
 solve;
+
+# Salida de la solución (archivo .sol): valor de la función objetivo
+printf "OBJ %f\n", CosteMedio;
+
+# Dibujo de la solucion: para cada posición, fila, columna y prioridad de la caja colocada
+printf {i in F, j in C, k in K : x[k,i,j] > 0.5} "SOL %d %d %d\n", i, j, p[k];
+
 end;
