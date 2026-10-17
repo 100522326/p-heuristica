@@ -300,8 +300,8 @@ def main():
         sys.exit(-1)
 
     # Mostrar informacion por la salida estandar (en una unica linea).
-    # Formato: numero de variables, numero de restricciones y valor objetivo.
-    print(f"{info['var_count']} {info['constraints_count']} {info['obj_value']:.2f}")
+    print(f"Variables: {info['var_count']} | Restricciones: {info['constraints_count']} | "
+          f"Coste medio (función objetivo): {info['obj_value']:.2f}")
 
 
 if __name__ == "__main__":
