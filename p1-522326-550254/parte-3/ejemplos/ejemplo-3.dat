@@ -1,0 +1,22 @@
+data;
+
+param l := 1;
+param h := 2;
+param n := 2;
+
+param p :=
+1 1
+2 2
+;
+
+param w :=
+1 5
+2 5
+;
+
+param c :=
+1 0
+2 0
+;
+
+end;
